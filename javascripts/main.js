@@ -1,7 +1,7 @@
 console.log('This would be the main JS file.');
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/pg/sw.js', {
-    scope: '/pg/'
+  navigator.serviceWorker.register('/swpg/pg/sw.js', {
+    scope: '/swpg/pg/'
   }).then(function(reg) {
     console.log('Yey!', reg);
   }).catch(function(err) {
